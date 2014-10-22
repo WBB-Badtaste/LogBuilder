@@ -4,7 +4,7 @@
 
 #pragma once
 
-
+#include "MyEdit.h"
 // CLogBuilderDlg ¶Ô»°¿ò
 class CLogBuilderDlg : public CDialogEx
 {
@@ -30,15 +30,15 @@ protected:
 	DECLARE_MESSAGE_MAP()
 private:
 	CTime m_ctime;
+	CMyEdit m_myEdit1;
 public:
-	CDateTimeCtrl m_time;
+//	CDateTimeCtrl m_time;
 	CString m_end1;
 	CString m_end2;
 	CString m_end3;
 	CString m_end4;
 	CString m_end5;
 	CString m_item1;
-//	CEdit m_item2;
 	CString m_item2;
 	CString m_item3;
 	CString m_item4;

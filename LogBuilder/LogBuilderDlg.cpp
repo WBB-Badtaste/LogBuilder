@@ -37,19 +37,19 @@ CLogBuilderDlg::CLogBuilderDlg(CWnd* pParent /*=NULL*/)
 	m_start3 = _T("");
 	m_start4 = _T("");
 	m_start5 = _T("");
+
 }
 
 void CLogBuilderDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
-	DDX_Control(pDX, IDC_DATETIMEPICKER1, m_time);
+	DDX_Control(pDX, IDC_CMYEDIT1, m_myEdit1);
 	DDX_Text(pDX, IDC_END1, m_end1);
 	DDX_Text(pDX, IDC_END2, m_end2);
 	DDX_Text(pDX, IDC_END3, m_end3);
 	DDX_Text(pDX, IDC_END4, m_end4);
 	DDX_Text(pDX, IDC_END5, m_end5);
 	DDX_Text(pDX, IDC_ITEM1, m_item1);
-	//  DDX_Control(pDX, IDC_ITEM2, m_item2);
 	DDX_Text(pDX, IDC_ITEM2, m_item2);
 	DDX_Text(pDX, IDC_ITEM3, m_item3);
 	DDX_Text(pDX, IDC_ITEM4, m_item4);
@@ -132,9 +132,9 @@ HCURSOR CLogBuilderDlg::OnQueryDragIcon()
 void CLogBuilderDlg::OnSetfocusItem1()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	m_time.UpdateData(TRUE);
-	m_time.GetTime(m_ctime);
-	m_start1=m_ctime.Format("%H:%M:%S");
+	CTime t=CTime::GetCurrentTime ();
+	if(m_item1=="")
+		m_start1=t.Format(_T("%H:%M:%S"));
 	UpdateData(FALSE);
 }
 
@@ -142,22 +142,38 @@ void CLogBuilderDlg::OnSetfocusItem1()
 void CLogBuilderDlg::OnSetfocusItem2()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	CTime t=CTime::GetCurrentTime ();
+	if(m_item2=="")
+		m_start2=t.Format(_T("%H:%M:%S"));
+	UpdateData(FALSE);
 }
 
 
 void CLogBuilderDlg::OnSetfocusItem3()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	CTime t=CTime::GetCurrentTime ();
+	if(m_item3=="")
+		m_start3=t.Format(_T("%H:%M:%S"));
+	UpdateData(FALSE);
 }
 
 
 void CLogBuilderDlg::OnSetfocusItem4()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	CTime t=CTime::GetCurrentTime ();
+	if(m_item4=="")
+		m_start4=t.Format(_T("%H:%M:%S"));
+	UpdateData(FALSE);
 }
 
 
 void CLogBuilderDlg::OnSetfocusItem5()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	CTime t=CTime::GetCurrentTime ();
+	if(m_item5=="")
+		m_start5=t.Format(_T("%H:%M:%S"));
+	UpdateData(FALSE);
 }
