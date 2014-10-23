@@ -15,8 +15,9 @@ protected:
 	DECLARE_MESSAGE_MAP()
 
 private:
-	void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags) ;
 	BOOL RegisterWindowClass(HINSTANCE hInstance = NULL);
+public:
+	afx_msg void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags);
 };
 
 

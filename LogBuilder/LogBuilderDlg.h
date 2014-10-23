@@ -4,14 +4,12 @@
 
 #pragma once
 
-#include "MyEdit.h"
 // CLogBuilderDlg 对话框
 class CLogBuilderDlg : public CDialogEx
 {
 // 构造
 public:
 	CLogBuilderDlg(CWnd* pParent = NULL);	// 标准构造函数
-
 // 对话框数据
 	enum { IDD = IDD_LOGBUILDER_DIALOG };
 
@@ -29,10 +27,11 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 private:
-	CTime m_ctime;
-	CMyEdit m_myEdit1;
+	BOOL PreTranslateMessage(MSG*   pMsg);
+	CFile m_file;
+	BOOL WriteLog(const CString &str);
+	BOOL WriteMemo(const CString &str);
 public:
-//	CDateTimeCtrl m_time;
 	CString m_end1;
 	CString m_end2;
 	CString m_end3;
@@ -54,4 +53,6 @@ public:
 	afx_msg void OnSetfocusItem3();
 	afx_msg void OnSetfocusItem4();
 	afx_msg void OnSetfocusItem5();
+
+	CString m_projectName;
 };
