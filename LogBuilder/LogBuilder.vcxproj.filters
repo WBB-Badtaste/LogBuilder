@@ -24,10 +24,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LogBuilder.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="LogBuilderDlg.h">
+    <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
@@ -36,7 +33,10 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Resource.h">
+    <ClInclude Include="LogBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LogBuilderDlg.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

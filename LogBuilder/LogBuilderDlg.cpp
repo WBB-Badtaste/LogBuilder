@@ -164,6 +164,7 @@ void CLogBuilderDlg::OnSetfocusItem4()
 void CLogBuilderDlg::OnSetfocusItem5()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	
 }
 
 
@@ -204,7 +205,7 @@ BOOL CLogBuilderDlg::PreTranslateMessage(MSG*   pMsg)
 			case IDC_ITEM2:
 				if(m_item2!="")
 				{
-					p=(CEdit*)GetDlgItem(IDC_ITEM1);				
+					p=(CEdit*)GetDlgItem(IDC_ITEM2);				
 					p->GetSel(selStart,selEnd);
 					if(selEnd-selStart==p->LineLength())
 					{
@@ -223,7 +224,7 @@ BOOL CLogBuilderDlg::PreTranslateMessage(MSG*   pMsg)
 			case IDC_ITEM3:
 				if(m_item3!="")
 				{
-					p=(CEdit*)GetDlgItem(IDC_ITEM1);				
+					p=(CEdit*)GetDlgItem(IDC_ITEM3);				
 					p->GetSel(selStart,selEnd);
 					if(selEnd-selStart==p->LineLength())
 					{
@@ -242,7 +243,7 @@ BOOL CLogBuilderDlg::PreTranslateMessage(MSG*   pMsg)
 			case IDC_ITEM4:
 				if(m_item4!="")
 				{
-					p=(CEdit*)GetDlgItem(IDC_ITEM1);				
+					p=(CEdit*)GetDlgItem(IDC_ITEM4);				
 					p->GetSel(selStart,selEnd);
 					if(selEnd-selStart==p->LineLength())
 					{
@@ -261,7 +262,7 @@ BOOL CLogBuilderDlg::PreTranslateMessage(MSG*   pMsg)
 			case IDC_ITEM5:
 				if(m_item5!="")
 				{
-					p=(CEdit*)GetDlgItem(IDC_ITEM1);				
+					p=(CEdit*)GetDlgItem(IDC_ITEM5);				
 					p->GetSel(selStart,selEnd);
 					if(selEnd-selStart==p->LineLength())
 					{

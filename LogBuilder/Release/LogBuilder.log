@@ -1,13 +1,15 @@
-﻿生成启动时间为 2014/10/24 10:19:03。
+﻿生成启动时间为 2014/10/25 9:56:26。
      1>项目“E:\Github\LogBuilder\LogBuilder\LogBuilder.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在对“Release\LogBuilder.unsuccessfulbuild”执行 Touch 任务。
+         正在创建“Release\LogBuilder.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         所有输出均为最新。
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\LogBuilder.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt LogBuilderDlg.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _MBCS /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\LogBuilder.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _MBCS /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\LogBuilder.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt LogBuilder.cpp LogBuilderDlg.cpp
+         LogBuilder.cpp
          LogBuilderDlg.cpp
        ResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /l"0x0804" /IRelease\ /nologo /fo"Release\LogBuilder.res" LogBuilder.rc 
+         所有输出均为最新。
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Github\LogBuilder\Release\LogBuilder.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:"Release\LogBuilder.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Github\LogBuilder\Release\LogBuilder.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Github\LogBuilder\Release\LogBuilder.lib" /MACHINE:X86 Release\LogBuilder.res
          Release\LogBuilder.obj
@@ -25,4 +27,4 @@
 
 生成成功。
 
-已用时间 00:00:03.78
+已用时间 00:00:08.05

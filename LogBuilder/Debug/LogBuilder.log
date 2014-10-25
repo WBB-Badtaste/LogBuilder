@@ -1,11 +1,14 @@
-﻿生成启动时间为 2014/10/24 10:18:56。
+﻿生成启动时间为 2014/10/25 9:56:12。
      1>项目“E:\Github\LogBuilder\LogBuilder\LogBuilder.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在创建“Debug\LogBuilder.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+         正在对“Debug\LogBuilder.unsuccessfulbuild”执行 Touch 任务。
        ClCompile:
-         所有输出均为最新。
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\LogBuilder.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt LogBuilderDlg.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\LogBuilder.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\LogBuilder.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt LogBuilder.cpp LogBuilderDlg.cpp
          LogBuilderDlg.cpp
+         LogBuilder.cpp
+         正在生成代码...
        ResourceCompile:
          所有输出均为最新。
        ManifestResourceCompile:
@@ -29,4 +32,4 @@
 
 生成成功。
 
-已用时间 00:00:00.91
+已用时间 00:00:08.38
